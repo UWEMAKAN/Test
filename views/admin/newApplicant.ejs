@@ -1,0 +1,70 @@
+<%- include ('../partials/header') %>
+  <form action="/admin/applicants/new" method="post" class="form-group">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h1>Applicant's Information</h1>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <label for="firstName">First Name</label>
+        <br>
+        <input required class="form-control" type="text" name="firstName" id="firstName">
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <label for="lastName">Last Name</label>
+        <br>
+        <input required class="form-control" type="text" name="lastName" id="lastName">
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <label for="emailAddress">Email Address</label>
+        <br>
+        <input required class="form-control" type="email" name="emailAddress" id="emailAddress">
+      </div>
+      <div class="col-lg-3"></div>
+    </div>      
+    <br>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <label for="password">Password</label>
+        <br>
+        <input value="<%=password%>" readonly class="form-control" type="password" name="password" id="password">
+      </div>
+      <div class="col-lg-3"></div>
+    </div>      
+    <br>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <label for="phoneNumber">Phone Number</label>
+        <br>
+        <input required class="form-control" type="text" name="phoneNumber" id="phoneNumber">
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 d-flex justify-content-end">
+        <a class="btn btn-md btn-outline-primary" href="/admin/applicants">Cancel</a>&nbsp;&nbsp;
+        <input required class="btn btn-md btn-primary" type="submit" value="Create New">
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </form>
+<%- include ('../partials/footer') %>

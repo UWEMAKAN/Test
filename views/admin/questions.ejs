@@ -1,0 +1,42 @@
+<%- include ('../partials/header') %>
+  <div class="d-flex justify-content-between">
+    <a class="btn btn-md btn-outline-primary" href="/admin/applicants">List of Applicants</a>
+    <a class="btn btn-md btn-primary" href="/admin/questions/new">New Question</a>
+  </div>
+  <br>
+  <form method="post" action="/admin/questions" class="card">
+    <div class="card-header">
+      <h5>List of Questions</h5>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>              
+              <th></th>
+              <th>Question</th>              
+              <th>Answer</th>
+              <th><input type="checkbox" id="selectAll"></th>                     
+            </tr>
+          </thead>
+          <tbody>
+            <% questions.forEach((question, index) => {%>
+              <tr>                         
+                <td><%=index + 1%></td>
+                <td><a href="/admin/questions/<%=question._id%>">
+                  <%=(question.question.length > 90 ? question.question.substring(0, 90) + '...' : question.question)%>
+                </a></td>
+                <td><%=question.answer%></td>
+                <td><input type="checkbox" class="select" name="<%=question._id%>" id="select<%=index%>"></td>
+              </tr>
+            <%})%>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <input class="btn btn-md btn-outline-danger" type="submit" value="Delete">
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+<%- include ('../partials/footer') %>

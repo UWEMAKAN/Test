@@ -1,0 +1,275 @@
+[
+  {
+    "questionId": "question1",
+    "question": "If Lynn can type a page in p minutes, what piece of the page can she do in 5 minutes?",
+    "options": ["5/p", "4p – 5", "p + 5", "p/5", "1- p"],
+    "answer": "5/p"
+  },
+  {
+    "questionId": "question2",
+    "question": "If Sally can paint a house in 4 hours, and John can paint the same house in 6 hour, how long will it take for both of them to paint the house together?",
+    "options": [
+      "2 hours and 24 minutes",
+      "3 hours and 12 minutes",
+      "3 hours and 44 minutes",
+      "4 hours and 10 minutes",
+      "4 hours and 33 minutes"
+    ],
+    "answer": "2 hours and 24 minutes"
+  },
+  {
+    "questionId": "question3",
+    "question": "Employees of a discount appliance store receive an additional 20% off of the lowest price on an item. If an employee purchases a dishwasher during a 15% off sale, how much will he pay if the dishwasher originally cost $450?",
+    "options": ["$333.89", "$280.90", "$287.00", "$292.50"],
+    "answer": "$333.89"
+  },
+  {
+    "questionId": "question4",
+    "question": "The sales price of a car is $12,590, which is 20% off the original price. What is the original price?",
+    "options": [
+      "$14,310.40",
+      "$15,737.50",
+      "$14,990.90 ",
+      "$15,290.70 ",
+      "$16,935.80"
+    ],
+    "answer": "$15,737.50"
+  },
+
+  {
+    "questionId": "question5",
+    "question": "Solve the following equation for A : 2A/3 = 8 + 4A",
+    "options": ["-2.4 ", "2.4", "13", "-1.3", "0"],
+    "answer": "-2.4"
+  },
+
+  {
+    "questionId": "question6",
+    "question": "If Leah is 6 years older than Sue, and John is 5 years older than Leah, and the total of their ages is 41. Then how old is Sue?",
+    "options": ["8", "10", "14", "19", "24"],
+    "answer": "8"
+  },
+
+  {
+    "questionId": "question7",
+    "question": "Alfred wants to invest $4,000 at 6% simple interest rate for 5 years. How much interest will he receive?",
+    "options": ["$240", "$480", "$720", "$960 ", "$1,200 "],
+    "answer": "$1,200"
+  },
+
+  {
+    "questionId": "question8",
+    "question": " Jim is able to sell a hand-carved statue for $670 which was a 35% profit over his cost. How much did the statue originally cost him?",
+    "options": ["$496.30 ", "$512.40 ", "$555.40 ", "$574.90", "$588.20"],
+    "answer": "$496.30"
+  },
+
+  {
+    "questionId": "question9",
+    "question": "The city council has decided to add a 0.3% tax on motel and hotel rooms. If a traveler spends the night in a motel room that costs $55 before taxes, how much will the city receive in taxes from him?",
+    "options": ["10 cents ", "11 cents ", "15 cents", "17 cents", "21 cents"],
+    "answer": "17 cents"
+  },
+  {
+    "questionId": "question10",
+    "question": " A student receives his grade report from a local community college, but the GPA is smudged. He took the following classes: a 2 hour credit art, a 3 hour credit history, a 4 hour credit science course, a 3 hour credit mathematics course, and a 1 hour science lab. He received a “B” in the art class, an “A” in the history class, a “C” in the science class, a “B” in the mathematics class, and an “A” in the science lab. What was his GPA if the letter grades are based on a 4 point scale? (A=4, B=3, C=2, D=1, F=0)",
+    "options": ["2.7", "2.8 ", "3.0", "3.1 ", "3.2"],
+    "answer": "3.0"
+  },
+
+  {
+    "questionId": "question11",
+    "question": "Simon arrived at work at 8:15 A.M. and left work at 10: 30 P.M. If Simon gets paid by the hour at a rate of $10 and time and ½ for any hours worked over 8 in a day. How much did Simon get paid?",
+    "options": ["$120.25", "$160.75", "$173.75", "$180.00", "$180.00"],
+    "answer": "$173.75"
+  },
+  {
+    "questionId": "question12",
+    "question": "Grace has 16 jellybeans in her pocket. She has 8 red ones, 4 green ones, and 4 blue ones. What is the minimum number of jellybeans she must take out of her pocket to ensure that she has one of each color?",
+    "options": ["4", "8", "12", "13", "16"],
+    "answer": "13"
+  },
+  {
+    "questionId": "question13",
+    "question": "If r = 5z then 15z = 3y, then r =",
+    "options": ["y", "2y", "4y", "10y", "15y"],
+    "answer": "y"
+  },
+  {
+    "questionId": "question14",
+    "question": "If 300 jellybeans cost you x dollars. How many jellybeans can you purchase for 50 cents at the same rate?",
+    "options": ["150/x ", "150x", "6x ", "500/x ", "600x"],
+    "answer": "150/x"
+  },
+
+  {
+    "questionId": "question15",
+    "question": "Lee worked 22 hours this week and made $132. If she works 15 hours next week at the same pay rate, how much will she make?",
+    "options": ["$57", "$90", "$104", "$112", "600x"],
+    "answer": "$90"
+  },
+  {
+    "questionId": "question16",
+    "question": "If 8x + 5x + 2x + 4x = 114, the 5x + 3 =",
+    "options": ["12", "25", "33", "47", "86"],
+    "answer": "33"
+  },
+  {
+    "questionId": "question17",
+    "question": "You need to purchase a textbook for nursing school. The book cost $80.00, and the sales tax where you are purchasing the book is 8.25%. You have $100. How much change will you receive back?",
+    "options": ["$5.20", "$7.35 ", "$13.40", "$19.95", "$21.25"],
+    "answer": "$13.40"
+  },
+
+  {
+    "questionId": "question18",
+    "question": "You purchase a car making a down payment of $3,000 and 6 monthly payments of $225. How much have you paid so far for the car?",
+    "options": ["$3225", "$4350", "$5375", "$6550", "$6398"],
+    "answer": "$4350"
+  },
+  {
+    "questionId": "question19",
+    "question": "Your supervisor instructs you to purchase 240 pens and 6 staplers for the nurse’s station. Pens are purchased in sets of 6 for $2.35 per pack. Staplers are sold in sets of 2 for 12.95. How much will purchasing these products cost?",
+    "options": ["$132.85 ", "$145.75 ", "$162.90 ", "$225.25", "$226.75 "],
+    "answer": "$132.85"
+  },
+
+  {
+    "questionId": "question20",
+    "question": "If y = 3, then y3(y3-y)=",
+    "options": ["300", "59", "648", "999", "1099"],
+    "answer": "648"
+  },
+
+  {
+    "questionId": "question21",
+    "question": "Everyone in the bank-including the manager and the tellers ,ran to the door when the fire alarm rang.",
+
+    "options": [
+      "tellers, ran ",
+      "tellers: ran",
+      "tellers, had run ",
+      "tellers-ran",
+      "tellers-ran"
+    ],
+    "answer": "tellers-ran"
+  },
+
+  {
+    "questionId": "question22",
+    "question": " To no ones surprise, Joe didn’t have his homework ready.",
+    "options": [
+      "no ones surprise",
+      "noones surprise",
+      "no-ones surprise",
+      "no ones’ surprise",
+      "no one’s surprise "
+    ],
+    "answer": "no one’s surprise"
+  },
+
+  {
+    "questionId": "question23",
+    "question": "If he would have read “The White Birds,” he might have liked William Butler Yeats’ poetry.",
+    "options": [
+      "would have read",
+      "could have read",
+      "would of read",
+      "could of read ",
+      "had read"
+    ],
+    "answer": "had read"
+  },
+
+  {
+    "questionId": "question24",
+    "question": "After the hurricane, uprooted trees were laying all over the ground.",
+    "options": [
+      "were laying",
+      "lying ",
+      "were lying",
+      "were laid ",
+      "was laid "
+    ],
+    "answer": "were lying"
+  },
+
+  {
+    "questionId": "question25",
+    "question": " Ralph Waldo Emerson (1803-1882), the great transcendentalist philosopher, wrote in his essay “Self-Reliance” of the need for an individual to develop his capacities",
+    "options": [
+      "essay \"Self-Reliance\"",
+      "say, “Self-Reliance”",
+      "essay: Self-Reliance",
+      "essay, Self-Reliance",
+      "essay; “Self-Reliance”"
+    ],
+    "answer": "essay \"Self-Reliance\""
+  },
+
+  {
+    "questionId": "question26",
+    "question": "he recently built children’s amusement park has been called “a boon to the community” by its supporters and “an eyesore” by its harshest critics.",
+    "options": [
+      "and “an eyesore” by its harshest",
+      "and, “an eyesore,” by its harshest",
+      "and, an eyesore; by its harshest",
+      "and-an eyesore-by its’ harshest ",
+      "and-“an eyesore”-by its’ harshest"
+    ],
+    "answer": "and “an eyesore” by its harshest"
+  },
+
+  {
+    "questionId": "question27",
+    "question": "I always have trouble remembering the meaning of these two common verbs, affect (to change” or “to influence”) and effect (“to cause” or “to accomplish).” ",
+    "options": [
+      "“to accomplish).”",
+      "“to accomplish”).",
+      "“to accomplish).",
+      "To accomplish. ",
+      "To accomplish. "
+    ],
+
+    "answer": "“to accomplish”)."
+  },
+
+  {
+    "questionId": "question28",
+    "question": "My class just finished reading-“The Fall of the House of Usher”, a short story by Edgar Allan Poe.",
+    "options": [
+      "reading, The Fall of the House of Usher,",
+      "reading, The Fall of the House of Usher, ",
+      "reading “The Fall of the House of Usher,”",
+      "reading, “The Fall of the house of Usher,” ",
+      "reading: The Fall of the House of Usher- "
+    ],
+    "answer": "reading “The Fall of the House of Usher,”"
+  },
+
+  {
+    "questionId": "question29",
+    "question": "After it was repaired it ran perfect again",
+    "options": [
+      "ran perfect",
+      "ran perfectly",
+      "could run perfect",
+      "could of run perfect",
+      "would run perfectly"
+    ],
+    "answer": "ran perfectly"
+  },
+
+  {
+    "questionId": "question30",
+    "question": "“Are there two E’s in beetle,” asked Margo?",
+    "options": [
+      "there two E’s in beetle,” asked Margo?",
+      "their two E’s in beetle?” asked Margo.",
+      "heir two E’s in beetle,” asked Margo.",
+      "there two E’s in beetle?” asked Margo.",
+      "there two E’s in beetle, asked Margo?"
+    ],
+    "answer": "there two E’s in beetle?” asked Margo."
+  }
+]

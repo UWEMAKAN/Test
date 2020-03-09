@@ -1,0 +1,147 @@
+.clockStyle {
+  background-color: #000;
+  border: #999 2px inset;
+  padding: 6px;
+  color: #0ff;
+  font-family: "Arial Black", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline;
+}
+
+form h1 {
+  color: black;
+  font-family: verdana;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  color: black;
+}
+
+#quiz {
+  padding: 10px 20px 10px 20px;
+
+  border-radius: 20px;
+  float: left;
+}
+
+#button {
+  background: green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  margin-top: 15px;
+}
+
+#button:hover {
+  background: white;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
+}
+
+#after_submit {
+  display: none;
+  background: #ff5459;
+  padding: 10px 20px 10px 20px;
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 5rem;
+  font-size: 30px;
+}
+
+.radio-btn {
+  margin: 0 1rem;
+}
+
+.paragraph {
+  margin: 1rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  row-gap: 4rem;
+}
+
+.footer {
+  height: 10rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.result {
+  margin: 2rem 0;
+  display: block;
+}
+
+.display {
+  display: grid;
+  /* grid-template-rows: repeat(min-content, 5); */
+  grid-auto-rows: min-content;
+  row-gap: 1rem;
+
+  grid-template-columns: repeat(min-content, 2);
+  column-gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.logo {
+  height: 40px;
+  /* width: 150px; */
+}
+
+/* ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+li:before {
+  counter-increment: section;
+  content: counters(section, ".") ". ";
+}
+
+li li:before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+}
+
+ol ol ol {
+  counter-reset: list;
+  margin: 0;
+}
+
+ol ol ol > li {
+  list-style: none;
+  position: relative;
+}
+
+ol ol ol > li:before {
+  counter-increment: list;
+  content: "(" counter(list, lower-alpha) ") ";
+  position: absolute;
+  left: -1.4em;
+} */

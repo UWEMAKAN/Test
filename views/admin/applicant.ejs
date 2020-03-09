@@ -1,0 +1,89 @@
+<%- include ('../partials/header') %>
+  <div class='card'>
+    <div class='card-header d-flex justify-content-between'>
+      <h4>Applicant Details</h4>
+      <a class="btn btn-outline-primary" href="/admin/applicants">&larr;Back</a>
+    </div>
+    <div class='card-body'>
+      <div class='row'>
+        <div class="col-md-2"></div>
+        <div class='col-md-8'>
+          <div class='row'>
+            <div class='col-md-4'><strong>Name:</strong></div>
+            <div class='col-md-8'><%=applicant.firstName%> <%=applicant.lastName%></div>
+          </div><br>
+          <div class='row'>
+            <div class='col-md-4'><strong>Email Address:</strong></div>
+            <div class='col-md-8'><%=applicant.emailAddress%></div>
+          </div><br>
+          <div class='row'>
+            <div class='col-md-4'><strong>Phone Number:</strong></div>
+            <div class='col-md-8'><%=applicant.phoneNumber%></div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-8">
+              <input type="checkbox" name="toggle" id="toggle">&nbsp;&nbsp;&nbsp;
+              <label for="toggle" id="toggle-label">Show Password</label>
+            </div>          
+          </div>
+          <div class='row hide' id="togglePassword">
+            <div class='col-md-4'><strong>Password:</strong></div>
+            <div class='col-md-8'><%=applicant.password%></div>
+          </div>
+        </div><br>
+        <div class='col-md-2'></div>
+      </div>
+    </div>
+    <div class="card-header">
+      <h4>Applicant Records</h4>
+    </div>
+    <form class="responseForm" name="responseForm" action="/admin/applicants/<%=applicant._id%>" method="post">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>              
+                <th>Score</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th><input type="checkbox" id="selectAll"></th>           
+              </tr>
+            </thead>
+            <tbody>
+              <% applicant.responses.forEach((response, index) => {%>
+                <tr>                          
+                  <td><%=response.score%> of <%=response.total%></td>
+                  <td><%=response.status%></td>
+                  <td><%=('0'+response.time.getDate()).slice(-2)%>/<%=('0'+response.time.getMonth()).slice(-2)%>/<%=response.time.getFullYear()%></td>
+                  <td><%=('0'+response.time.getHours()).slice(-2)%>:<%=('0'+response.time.getMinutes()).slice(-2)%>:<%=('0'+response.time.getSeconds()).slice(-2)%></td>
+                  <td><input type="checkbox" class="select" name="<%=response._id%>" id="select<%=index%>"></td>
+                </tr>
+              <%})%>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class='card-footer d-flex justify-content-between'>
+        <a class="btn btn-outline-primary" href="/admin/applicants">&larr;Back</a>
+        <!-- <a class="btn btn-outline-danger" href="/admin/applicants/<%=applicant._id%>">Delete</a> -->
+        <input class="btn btn-outline-danger" type="submit" value="Delete">
+      </div>
+    </form>
+  </div>
+  <script>
+    const toggle = document.getElementById('toggle');
+    const passwordRow = document.getElementById('togglePassword');
+    const label = document.getElementById('toggle-label');
+    toggle.addEventListener('change', (event) => {
+      if (toggle.checked) {
+        passwordRow.classList.remove('hide');
+        label.textContent = 'Hide Password';
+      } else {
+        passwordRow.classList.add('hide');
+        label.textContent = 'Show Password';
+      }
+    });
+  </script>
+  <script src="js/script.js"></script>
+<%- include ('../partials/footer') %>

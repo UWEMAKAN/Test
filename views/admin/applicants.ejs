@@ -1,0 +1,44 @@
+<%- include ('../partials/header') %>
+  <div class="d-flex justify-content-between">
+    <a class="btn btn-md btn-outline-primary" href="/admin/questions">List of Questions</a>
+    <a class="btn btn-md btn-primary" href="/admin/applicants/new">New Applicant</a>
+  </div>
+  <br>
+  <form method="POST" action="/admin/applicants" class="card">
+    <div class="card-header">
+      <h2>List of Applicants</h2>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>            
+              <th>Name</th>
+              <th>Recent Score</th>
+              <th>Status</th>
+              <th>Email Address</th>
+              <th>Phone Number</th>
+              <th><input type="checkbox" id="selectAll"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% applicants.forEach((applicant, index) => {%>
+              <tr>            
+                <td><a href="/admin/applicants/<%=applicant._id%>"><span><strong><%=applicant.firstName%> </strong></span><span><%=applicant.lastName%></span></a></td>
+                <td><%=(applicant.responses[applicant.responses.length - 1] ? applicant.responses[applicant.responses.length - 1].score + ' of ' : 'No Attempt')%><%=(applicant.responses[applicant.responses.length - 1] ? applicant.responses[applicant.responses.length - 1].total : '')%></td>
+                <td><%=(applicant.responses[applicant.responses.length - 1]) ? applicant.responses[applicant.responses.length - 1].status : 'No Attempt'%></td>
+                <td><%=applicant.emailAddress%></td>
+                <td><%=applicant.phoneNumber%></td>
+                <td><input type="checkbox" class="select" name="<%=applicant._id%>" id="select<%=index%>"></td>
+              </tr>
+            <%})%>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <input class="btn btn-md btn-outline-danger" type="submit" value="Delete">
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+<%- include ('../partials/footer') %>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zanibal quiz</title>    
+    <script src="js/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+
+  <body beforeunload="quizForm.submit()">
+    <div class="navbar navbar-expand-lg navbar-light bg-light position-fixed fixed-top">
+      <div class="container  d-flex justify-content-between">
+        <a href="" class="navbar-brand">
+          <img class="logo" src="img/transparent-logo.png" alt="logo">
+        </a>
+        <div id="clockDisplay" class="clockStyle clock"></div>
+      </div>
+    </div>
+    <script src="js/quiz.js"></script>
+    <div class="content">
+      <div class="container container-content">
+        <form method="post" action="/applicant/quiz" class="form-group" id="quizForm">
+          <br>
+          <h1>ZANIBAL INTERVIEW QUESTIONS 2020</h1>
+          <br>
+          <ol>
+            <h5>Quantitative Aptitude Section</h5>
+            <br>
+            <% maths.forEach((item, index) => { %>
+              <li>
+                <div class="paragraph">
+                  <p><%=item.question%></p>
+                </div>
+                <% item.options.forEach((value, ind) => { %>
+                  <input type="radio" name="<%=item._id%>" id="<%=item._id%><%=ind%>" class="radio-btn" value="<%=value%>">               
+                  <label for="<%=item._id%><%=ind%>"><%=value%></label><br>
+                <%})%>
+              </li>
+            <%})%>
+            <br>
+            <h5>Verbal Aptitude Section</h5>
+            <br>
+            <% english.forEach((item, index) => { %>
+              <li>
+                <div class="paragraph">
+                  <p><%=item.question%></p>
+                </div>
+                <% item.options.forEach((value, ind) => { %>
+                  <input type="radio" name="<%=item._id%>" id="<%=item._id%><%=ind%>" class="radio-btn" value="<%=value%>">               
+                  <label for="<%=item._id%><%=ind%>"><%=value%></label><br>
+                <%})%>
+              </li>
+            <%})%>
+          </ol>
+          <br>
+          <input type="submit" value="submit" class="btn btn-lg btn-success">
+        </form>
+        <br>
+          <div id="after_submit">
+            <p id="messages"></p>
+            <p id="number_correct"></p>
+          </div>
+      </div>
+      <footer class="footer">
+        Copyright&copy; Zanibal LLC 2020.
+      </footer>
+    </div>
+    <script>
+      window.onload=function() {
+        let quizForm = document.getElementById('quizForm');
+        window.setTimeout('quizForm.submit()', 35 * 60 * 1000);              
+      }
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

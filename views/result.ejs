@@ -1,0 +1,29 @@
+<%- include ('./partials/header') %>
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 display">
+      <div>
+        <span><strong>Name: </strong></span>
+        <span><%=user.firstName%> <%=user.lastName%></span>
+      </div>
+      <div>
+        <span><strong>Email: </strong></span>
+        <span><%=user.emailAddress%></span>
+      </div>            
+      <div>
+        <span><strong>Phone: </strong></span>
+        <span><%=user.phoneNumber%></span>
+      </div>
+      <div>
+        <span><strong>Score: </strong></span>
+        <span><%=result%> of 30</span>
+      </div>
+      <div>
+        <span><strong>Status: </strong></span>
+        <span><%=remark%></span>
+      </div>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+<%- include ('./partials/footer') %>
+      
